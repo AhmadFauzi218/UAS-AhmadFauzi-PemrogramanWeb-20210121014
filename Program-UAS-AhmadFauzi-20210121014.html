@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Program UAS-Ahmad Fauzi</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/profile.jpg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="js/all.js"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+
+            <a class="navbar-brand js-scroll-trigger" href="#penjualan_barang">
+                <span class="d-block d-lg-none">Program UAS</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <h4 class="mb-0" >Program UAS <br> Ahmad Fauzi</h4>
+                    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class=""><a class="nav-link js-scroll-trigger" href="#penjualan_barang">Penjualan Barang</a></li>
+                    <li class=""><a class="nav-link js-scroll-trigger" href="#penggajian_karyawan">Penggajian Karyawan</a></li>
+                    <li class=""><a class="nav-link js-scroll-trigger" href="#pembelian_barang">Pembelian Barang</a></li>
+                    <li class=""><a class="nav-link js-scroll-trigger" href="#pembelian_barangMember">Pembelian Barang (Member)</a></li>
+                    <li class=""><a class="nav-link js-scroll-trigger" href="#penjualan_barangElektronik">Penjualan Barang Elektronik</a></li>
+                    <li class=""><a class="nav-link js-scroll-trigger" href="#penjualan_motor">Penjualan Motor</a></li>
+                    <li class=""><a class="nav-link js-scroll-trigger" href="#tagihan_listrik">Tagihan Listrik</a></li>
+                    <li class=""><a class="nav-link js-scroll-trigger" href="#kredit_rumah">Kredit Rumah</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="penjualan_barang">
+                <div class="resume-section-content">
+                    <h2 >Program <u><span class="text-primary">Penjualan Barang</span></u></h2>
+                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="needs-validation" name="form">
+                                        <div class="row">
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Nama Barang</label>
+                                                <input type="text" class="form-control"  placeholder="Acer Predator" required name="N_Barang">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label >Harga Barang</label>
+                                                <input type="text" class="form-control"  placeholder="17000000" required name="H_Barang">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label >Jumlah Barang</label>
+                                                <input type="number" class="form-control"  placeholder="3" required name="J_Barang">
+                                            </div>
+                                            <hr class="mb-4">
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-primary" onclick="proses()">Proses</a>
+                                                <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Total Pembelian</label>
+                                                <input type="text" class="form-control" required readonly name="T_Pembelian">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label >Diskon 10%</label>
+                                                <input type="text" class="form-control" required readonly name="diskon">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label >Total Bayar</label>
+                                                <input type="text" class="form-control" required readonly name="T_BayarBarang">
+                                              </div>
+                                        </div>
+                                        </div>
+                                    </form>
+                                   
+                                </div>
+                            </div>
+                            <a class="btn btn-outline-dark d-block mb-1" href="#penggajian_karyawan">Program Selanjutnya</a>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="penggajian_karyawan">
+                <div class="resume-section-content">
+                    <h2 class="">Program <u><span class="text-primary">Penggajian Karyawan</span></u></h2>
+                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="needs-validation" name="form1">
+                                        <div class="row">
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Nama Pegawai</label>
+                                                <input type="text" class="form-control"  placeholder="Ahmad Fauzi" required name="N_Pegawai">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label >Jam Kerja</label>
+                                                <input type="text" class="form-control"  placeholder="10" required name="J_Kerja">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label >Upah Per-Jam</label>
+                                                <input type="number" class="form-control"  placeholder="50000" required name="U_Perjam">
+                                            </div>
+                                            
+                                            <div class="mb-3">
+                                                <label >Jumlah Anak</label>
+                                                <input type="number" class="form-control"  placeholder="3" required name="J_Anak">
+                                            </div>
+                                            <hr class="mb-4">
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-primary" onclick="proses1()">Proses</a>
+                                                <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Nama Pegawai</label>
+                                                <input type="text" class="form-control" required readonly name="ON_Pegawai">
+                                              </div>
+                                            <div class="mb-3">
+                                                <label >Gaji</label>
+                                                <input type="text" class="form-control" required readonly name="Gaji">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label >Tunjangan Anak 10%</label>
+                                                <input type="text" class="form-control" required readonly name="T_Anak">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label >Total Gaji</label>
+                                                <input type="text" class="form-control" required readonly name="T_Gaji">
+                                              </div>
+                                        </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <a class="btn btn-outline-dark d-block mb-1" href="#pembelian_barang">Program Selanjutnya</a>
+                
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="pembelian_barang">
+                <div class="resume-section-content">
+                    <h2 class="">Program <u><span class="text-primary">Pembelian Barang</span></u></h2>
+                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="needs-validation" name="form2">
+                                        <div class="row">
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Nama Barang</label>
+                                                <select class="form-control" name="N_Barang" required>
+                                                    <option>Silahkan Pilih Barang</option>
+                                                    <option value="LCD">LCD</option>
+                                                    <option value="Monitor">Monitor</option>
+                                                    <option value="Memory">Memory</option>
+                                                    <option value="Power_S">Power Suply</option>
+                                                    <option value="Hardisk">Hardisk</option>
+                                                  </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label >Jumlah Barang</label>
+                                                <input type="text" class="form-control"  placeholder="10" required name="J_Barang">
+                                            </div>
+                                            <hr class="mb-4">
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-primary" onclick="proses2()">Proses</a>
+                                                <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Harga Barang</label>
+                                                <input type="text" class="form-control" required readonly name="H_Barang">
+                                              </div>
+                                            <div class="mb-3">
+                                                <label >Total</label>
+                                                <input type="text" class="form-control" required readonly name="Total">
+                                              </div>
+                                        </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <a class="btn btn-outline-dark d-block mb-1" href="#pembelian_barangMember">Program Selanjutnya</a>
+                
+                </div>
+            </section>
+            
+            <hr class="m-0" />
+            <section class="resume-section" id="pembelian_barangMember">
+                <div class="resume-section-content">
+                    <h2 class="">Program <u class=""><span class="text-primary">Pembelian Barang <span><b>Member</b></span></span></u></h2>
+                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="needs-validation" name="form3">
+                                        <div class="row">
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Nama Barang</label>
+                                                <select class="form-control" name="N_Barang" required>
+                                                    <option>Silahkan Pilih Barang</option>
+                                                    <option value="LCD">LCD</option>
+                                                    <option value="Monitor">Monitor</option>
+                                                    <option value="Memory">Memory</option>
+                                                    <option value="Power_S">Power Suply</option>
+                                                    <option value="Hardisk">Hardisk</option>
+                                                  </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label >Jumlah Barang</label>
+                                                <input type="text" class="form-control"  placeholder="10" required name="J_Barang">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="">Member ?</label>
+                                                <input type="checkbox" class="" name="Member"> YA
+                                            </div>
+                                            <hr class="mb-4">
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-primary" onclick="proses3()">Proses</a>
+                                                <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Harga Barang</label>
+                                                <input type="text" class="form-control" required readonly name="H_Barang">
+                                              </div>
+                                            <div class="mb-3">
+                                                <label >Total</label>
+                                                <input type="text" class="form-control" required readonly name="Total">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label >Diskon 10%</label>
+                                                <input type="text" class="form-control" required readonly name="Diskon">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label >Bayar</label>
+                                                <input type="text" class="form-control" required readonly name="Bayar">
+                                              </div>
+                                        </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <a class="btn btn-outline-dark d-block mb-1" href="#penjualan_barangElektronik">Program Selanjutnya</a>
+                
+                </div>
+            </section>
+            
+            <hr class="m-0" />
+            <section class="resume-section" id="penjualan_barangElektronik">
+                <div class="resume-section-content">
+                    <h2 class="">Program <u class=""><span class="text-primary">Penjualan Barang Elektronik </span></u></h2>
+                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="needs-validation" name="form4">
+                                        <div class="row">
+                                        <div class="mb-1 col-md-6">
+                                            
+                                            <div class="mb-3">
+                                                <label >Nama Barang</label>
+                                                <input type="text" class="form-control"  placeholder="Mackbook Pro" required name="N_Barang">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label >Harga</label>
+                                                <input type="text" class="form-control"  placeholder="15000000" required name="H_Barang">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label >Jumlah Barang</label>
+                                                <input type="text" class="form-control"  placeholder="10" required name="J_Barang">
+                                            </div>
+                                            <div class="mb-3">
+                                                                                    
+                                                <label for="">Aksesoris :</label>
+                                                <input type="radio" name="pilih_aksesoris"> USB
+                                                <input type="radio" name="pilih_aksesoris"> Memory
+                                                <input type="radio" name="pilih_aksesoris"> Speaker
+                                            </div>
+                                            <hr class="mb-4">
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-primary" onclick="proses4()">Proses</a>
+                                                <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Total</label>
+                                                <input type="text" class="form-control" required readonly name="Total">
+                                              </div>
+                                            <div class="mb-3">
+                                                <label >Pajak 10%</label>
+                                                <input type="text" class="form-control" required readonly name="Pajak">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label >Total Bayar</label>
+                                                <input type="text" class="form-control" required readonly name="T_Bayar">
+                                              </div>
+                                              <div class="mb-1">
+
+                                                <table class="table table-hover table-primary">
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col">Aksesoris </th>
+                                                        <th scope="col">Harga</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td scope="row">USB</td>
+                                                        <td>50000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">Memory</td>
+                                                        <td>120000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">Speaker</td>
+                                                        <td>40000</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                </div>
+    
+                                        </div>
+                                     </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <a class="btn btn-outline-dark d-block mb-1" href="#penjualan_motor">Program Selanjutnya</a>
+                
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="penjualan_motor">
+                <div class="resume-section-content">
+                    <h2 class="">Program <u class=""><span class="text-primary">Penjualan Motor </span></u></h2>
+                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="needs-validation" name="form5">
+                                        <div class="row">
+                                        <div class="mb-1 col-md-6">
+                                            
+                                            <div class="mb-3">
+                                                <label>Merk Motor</label>
+                                                                                        
+                                                <select class="form-control" id="M_Motor">
+                                                    <option>Silahkan Pilih Motor</option>
+                                                    <option value="Honda">Honda</option>
+                                                    <option value="Yamaha">Yamaha</option>
+                                                    <option value="Suzuki">Suzuki</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class="mb-3">
+                                                                                    
+                                                <label for="" class="col-md-4">Aksesoris </label>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="checkbox" id="V_Racing" value="Velg Racing" />
+                                                  <label class="form-check-label" for="V_Racing">Velg Racing</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="checkbox" id="H_Motor" value="Helm" />
+                                                  <label class="form-check-label" for="H_Motor">Helm</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="checkbox" id="J_Motor" value="Jaket" />
+                                                  <label class="form-check-label" for="J_Motor">Jaket</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="col-md-4">Cara Pembayaran </label>
+                                                    <div class="form-check form-check-inline">
+                                                        <div><input class="form-check-input" type="radio" id="tunai" name="radio" value="Tunai" /><label for="pilihanbayar 1">Tunai</label></div>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <div><input class="form-check-input" type="radio" id="kredit" name="radio" value="Kredit" /><label for="pilihanbayar 2">Kredit</label></div>
+                                                    </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                
+                                                <div class="row">
+                                                    <div class="mb-1 col-md-5">
+                                            
+                                                    <table class="table table-hover table-primary">
+                                                        <thead>
+                                                        <tr>
+                                                            <th scope="col">Merk</th>
+                                                            <th scope="col">Harga</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td scope="row">Honda</td>
+                                                            <td>15000000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Yamaha</td>
+                                                            <td>14000000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">Suzuki</td>
+                                                            <td>13000000</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    </div>
+                                                    <div class="mb-1 col-md-5">
+                                            
+                                                        <table class="table table-hover table-primary">
+                                                            <thead>
+                                                            <tr>
+                                                                <th scope="col">Aksesoris </th>
+                                                                <th scope="col">Harga</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td scope="row">Velg</td>
+                                                                <td>450000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">Helm</td>
+                                                                <td>250000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">Jaket</td>
+                                                                <td>300000</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </div>
+                                                        </div>
+                                            </div>
+                                            <hr class="mb-4">
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-primary" onclick="proses5()">Proses</a>
+                                                <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <label >Harga Barang</label>
+                                                <input type="text" class="form-control" required readonly name="H_Barang" id="H_Barang">
+                                              </div>
+                                            <div class="mb-3">
+                                                <label >Bunga / Diskon</label>
+                                                <input type="text" class="form-control" required readonly name="Diskon" id="Diskon">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label >Total Bayar</label>
+                                                <input type="text" class="form-control" required readonly name="T_Bayar" id="T_Bayar">
+                                              </div>
+                                             <div class="mb-3">
+                                                <img src="assets/img/30895-girl-riding-a-motorcycle.gif" alt="" class="img-fluid" style="height: 170px;">
+                                             </div>
+                                            <div class="mb-4">
+                                                <a class="btn btn-outline-dark d-block mb-1" href="#tagihan_listrik">Program Selanjutnya</a>
+                
+                                            </div>
+                                        </div>
+                                     </div>
+                                    </form>
+                                </div>
+                            </div>
+                          
+                </div>
+            </section>
+            
+            <hr class="m-0" />
+            <section class="resume-section" id="tagihan_listrik">
+                <div class="resume-section-content">
+                    <h2 class="">Program <u class=""><span class="text-primary">Tagihan Listrik </span></u></h2>
+                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="needs-validation" name="form6">
+                                        <div class="row">
+                                        <div class="mb-1 col-md-6">
+                                            
+                                            <div class="mb-3">
+                                                <label for="">Nama Pelanggan</label>
+                                                <input type="text" class="form-control"  placeholder="Ahmad Fauzi" required id="N_Pelanggan">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>RumahKategori</label>
+                                                <select class="form-control" id="kategori">
+                                                    <option>Pilih Kategori</option>
+                                                    <option value="sosial">Sosial</option>
+                                                    <option value="rumah">Rumah</option>
+                                                    <option value="industri">Industri</option>
+                                                  </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="">Jumlah Pemakaian</label>
+                                                <input type="text" class="form-control"  placeholder="10..." required id="J_Pemakaian">
+                                            </div>
+                                            <hr class="mb-4">
+                                            
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-primary" onclick="proses6()">Proses</a>
+                                                <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                            </div>
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-dark d-block mb-1" href="#kredit_rumah">Program Selanjutnya</a>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <table class="table table-hover table-primary">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">Kategori</th>
+                                                        <th scope="col">Abodemen</th>
+                                                        <th scope="col">Tarif PER-KWH</th>
+                                                        <th scope="col">Pajak</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td scope="row">Sosial</td>
+                                                        <td>10000</td>
+                                                        <td>300</td>
+                                                        <td>0%</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td scope="row">Rumah</td>
+                                                        <td>30000</td>
+                                                        <td>500</td>
+                                                        <td>10%</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td scope="row">Industri</td>
+                                                        <td>50000</td>
+                                                        <td>1000</td>
+                                                        <td>30%</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                            <div class="mb-3">
+                                                <table cellpadding="7" class="table table-hover">
+                                                    <tr>
+                                                        <td>Jumlah</td>
+                                                        <td>Tarif per KWh</td>
+                                                        <td>Abodemen</td>
+                                                        <td>Sub Total</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="O_Jumlah"></td>
+                                                        <td id="O_Tarif"></td>
+                                                        <td id="O_Abodemen"></td>
+                                                        <td id="O_Subtotal"></td>
+                                                        
+                                                    </tr>
+                                                </table>
+                                                  <table cellpadding="5">
+                                                    <tr>
+                                                        <td>Subtotal</td>
+                                                        <td>:</td>
+                                                        <td id="O_Total"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pajak</td>
+                                                        <td>:</td>
+                                                        <td id="O_Pajak"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bayar</td>
+                                                        <td>:</td>
+                                                        <td id="O_Bayar"></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            
+                                        </div>
+                                     </div>
+                                    </form>
+                                </div>
+                            </div>
+                          
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="kredit_rumah">
+                <div class="resume-section-content">
+                    <h2 class="">Program <u class=""><span class="text-primary">Kredit Rumah </span></u></h2>
+                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="needs-validation" name="Page_Form" id="Page_Form">
+                                        <div class="row">
+                                        <div class="mb-1 col-md-6">
+                                            
+                                            <div class="mb-3">
+                                                <label>Tipe Rumah</label>
+                                                    <select class="form-control" name="K_Rumah" id="K_Rumah" onchange="Pilih_R ()">
+                                                        <option>Pilih Tipe Rumah</option>
+                                                        <option value="Almanda">Almanda</option>
+                                                        <option value="Mawar">Mawar</option>
+                                                  </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="">Lama Kredit</label>
+                                                <input type="text" class="form-control"  placeholder="10" required id="L_Kredit">
+                                            </div>
+                                            
+                                            <hr class="mb-4">
+                                            <div class="mb-3">
+                                                <h3 class="text-muted ">Harga Rumah</h3>
+                                                <ul class=" text-muted" type="A">
+                                                    <li>Type Almanda =  120000000</li>
+                                                    <li>Type Mawar = 130000000</li>
+                                                </ul>
+                                                <p>Uang Muka Sebesar 20% dari Total Harga Rumah</p>
+                                            </div>
+                                            <hr class="mb-4">
+                                            <div class="mb-3">
+                                                <a class="btn btn-outline-primary" onclick="proses7()">Proses</a>
+                                                <button type="reset" class="btn btn-outline-danger">Reset</button>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <img src="assets/img/59875-home.gif" alt="" class="img-fluid" style="height: 470px;">
+                                             </div>
+                                        </div>
+                                        <div class="mb-1 col-md-6">
+                                            <div class="mb-3">
+                                                <table class="align-items-center">
+                                                    <tr>
+                                                        <td class="text-muted">Type Rumah</td>
+                                                        <td><div id="N_Rumah"></div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-muted">Harga Rumah</td>
+                                                        <td class="text-muted">
+                                                            <div class="mb-3">
+                                                                <input type="text" class="form-control" name="H_Rumah" id="H_Rumah" value="" disabled>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-muted">Uang Muka</td>
+                                                        <td class="text-muted">
+                                                            <div class="mb-3">
+                                                                <input type="text" class="form-control" name="U_Muka" id="U_Muka" value="" disabled>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-muted">Sisa</td>
+                                                        <td class="text-muted">
+                                                            <div class="mb-4">
+                                                                <input type="text" class="form-control" name="Sisa" id="Sisa" value="" disabled>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-muted">Lama Kredit</td>
+                                                        <td class="text-muted">
+                                                            <div class="mb-4">
+                                                                <input type="text" class="form-control" id="L_KeditInput" value="" disabled>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-muted">Angsuran</td>
+                                                        <td class="text-muted">
+                                                            <div class="mb-4">
+                                                                <input type="text" id="Ansuran" class="form-control" name="Ansuran" value="" disabled>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </table>
+                                            </div>
+                                            <div class="mb-3">
+                                                <textarea name="OT_hasil" rows="15" cols="70" class="text-muted form-control">Rincian Kredit Perbulan</textarea>
+                                            </div>
+                                        </div>
+                                     </div>
+                                    </form>
+                                </div>
+                            </div>
+                          
+                </div>
+            </section>
+            <!-- Awards-->
+            
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <script>
+            function proses(){
+            var H_Barang = parseFloat (document.form.H_Barang.value);
+            var J_Barang = parseFloat(document.form.J_Barang.value);
+            var diskon = parseFloat(document.form.diskon.value);
+
+            var total = H_Barang*J_Barang;
+            document.form.T_Pembelian.value="Rp "+total;
+
+            var diskon = H_Barang*0.1;
+            document.form.diskon.value="Rp "+diskon;
+            
+            var T_BayarBarang = total-diskon;
+            document.form.T_BayarBarang.value="Rp "+T_BayarBarang;
+          }
+          function proses1(){
+            var N_Pegawai = document.form1.N_Pegawai.value;
+            var J_Kerja = parseFloat (document.form1.J_Kerja.value);
+            var U_Perjam = parseFloat(document.form1.U_Perjam.value);
+            var J_Anak = parseFloat(document.form1.J_Anak.value);
+
+
+            
+            document.form1.ON_Pegawai.value=N_Pegawai;
+
+            var Gaji = J_Kerja*U_Perjam;
+            document.form1.Gaji.value="Rp "+Gaji;
+
+            var T_Anak = Gaji*0.1*J_Anak;
+            document.form1.T_Anak.value="Rp "+T_Anak;
+            
+            var T_Gaji = Gaji+T_Anak;
+            document.form1.T_Gaji.value="Rp "+T_Gaji;
+          }
+          function proses2(){
+            var N_Barang =  (document.form2.N_Barang.value);
+            
+            var J_Barang = parseFloat(document.form2.J_Barang.value);
+            
+            var harga_total =0.0;
+            var H_Barang = 0.0;
+            var total =0.0;
+
+            if(N_Barang == "Monitor"){
+                harga_total = 3000000;
+            }else if(N_Barang == "LCD"){
+                harga_total = 1000000;
+            }else if(N_Barang == "Memory"){
+                harga_total = 500000;
+            }else if(N_Barang = "Power_S"){
+                harga_total = 400000;
+            }else{
+                harga_total = 1000000;
+            }
+
+            var total = J_Barang*harga_total;
+            document.form2.H_Barang.value = "Rp "+eval(harga_total);
+            document.form2.Total.value= "Rp "+eval(total);
+        }
+        function proses3(){
+            var N_Barang =  (document.form3.N_Barang.value);
+            
+            var J_Barang = parseFloat(document.form3.J_Barang.value);
+            
+            var H_Total =0.0;
+            var diskon = 0.0;
+            var total =0.0;
+
+            if(N_Barang == "Monitor"){
+                H_Total = 3000000;
+            }else if(N_Barang == "LCD"){
+                H_Total = 1000000;
+            }else if(N_Barang == "Memory"){
+                H_Total = 500000;
+            }else if(N_Barang = "Power_S"){
+                H_Total = 400000;
+            }else{
+                H_Total = 1000000;
+            }
+            sub = J_Barang*H_Total;
+            if (document.form3.Member.checked == true){
+				diskon = 0.1 * sub;
+			}
+			else{
+				diskon=0.0;
+			}
+            total = sub-diskon;
+            document.form3.H_Barang.value = "Rp "+eval(H_Total);
+            document.form3.Total.value= "Rp "+eval(sub);
+            document.form3.Diskon.value= "Rp "+eval(diskon);
+            document.form3.Bayar.value= "Rp "+eval(total);
+          }
+          function proses4(){
+            var H_Barang = parseFloat (document.form4.H_Barang.value);
+            var J_Barang = parseFloat(document.form4.J_Barang.value);
+            var Total = H_Barang*J_Barang;
+            
+            var H_Aksesoris = "";
+            if (form4.pilih_aksesoris[0].checked){
+                H_Aksesoris= 50000;
+			}
+			if(form4.pilih_aksesoris[1].checked){
+                H_Aksesoris=120000;
+			} if(form4.pilih_aksesoris[2].checked){
+                H_Aksesoris=40000;
+            }
+           
+            var T_All = Total+H_Aksesoris;
+            document.form4.Total.value="Rp "+T_All;
+
+            var pajak = T_All*0.1;
+            document.form4.Pajak.value="Rp "+pajak;
+            
+            var T_Bayar = T_All+pajak;
+            document.form4.T_Bayar.value="Rp "+T_Bayar;
+          }
+          function proses5(){
+            let M_Motor = document.getElementById("M_Motor").value;
+
+            let velg = document.getElementById("V_Racing");
+            let H_Motor = document.getElementById("H_Motor");
+            let J_Motor = document.getElementById("J_Motor");
+            let tunai = document.getElementById("tunai");
+            let kredit = document.getElementById("kredit");
+            let T_Bayar = document.getElementById("T_Bayar").value;
+
+            let honda = 15000000;
+            let yamaha = 14000000;
+            let suzuki = 13000000;
+            switch (M_Motor) {
+                case "Honda":
+                M_Motor = honda;
+                document.getElementById("H_Barang").value = M_Motor;
+                break;
+                case "Yamaha":
+                M_Motor = yamaha;
+                document.getElementById("H_Barang").value = M_Motor;
+                break;
+                case "Suzuki":
+                M_Motor = suzuki;
+                document.getElementById("H_Barang").value = M_Motor;
+                break;
+                default:
+                break;
+            }
+            if (velg.checked) {
+                let Hrg_Velg = 450000 + M_Motor;
+
+                document.getElementById("H_Barang").value = Hrg_Velg;
+            } else if (H_Motor.checked) {
+                let Hrg_Helm = 250000 + M_Motor;
+                document.getElementById("H_Barang").value = Hrg_Helm;
+            } else if (J_Motor.checked) {
+                let Hrg_Jaket = 300000 + M_Motor;
+                document.getElementById("H_Barang").value = Hrg_Jaket;
+            } else {
+            }
+            if (velg.checked && H_Motor.checked && J_Motor.checked) {
+                let H_Barang = M_Motor + 450000 + 250000 + 300000;
+
+                document.getElementById("H_Barang").value = H_Barang;
+            } else if (velg.checked && H_Motor.checked) {
+                let H_Barang = M_Motor + 450000 + 250000;
+
+                document.getElementById("H_Barang").value = H_Barang;
+            } else if (velg.checked && J_Motor.checked) {
+                let H_Barang = M_Motor + 450000 + 300000;
+
+                document.getElementById("H_Barang").value = H_Barang;
+            } else if (H_Motor.checked && J_Motor.checked) {
+                let H_Barang = M_Motor + 250000 + 300000;
+
+                document.getElementById("H_Barang").value = H_Barang;
+            }
+
+            if (tunai.checked) {
+                let Diskon = 0.1 * document.getElementById("H_Barang").value;
+
+                T_Bayar = document.getElementById("H_Barang").value - Diskon;
+                document.getElementById("T_Bayar").value = T_Bayar;
+
+                document.getElementById("Diskon").value =Diskon;
+            } else if (kredit.checked) {
+                let hasilharga = parseInt(document.getElementById("H_Barang").value);
+                Diskon = 0.15;
+
+                let hitung = hasilharga * Diskon;
+
+                T_Bayar = hitung + hasilharga;
+
+                document.getElementById("T_Bayar").value = T_Bayar;
+
+                document.getElementById("Diskon").value =Diskon;
+            }
+          }
+          function proses6(){
+            var kategori = document.getElementById("kategori").value;
+            let J_Pemakaian = document.getElementById("J_Pemakaian").value;
+
+            let pajak;
+                switch (kategori) {
+                case "sosial":
+                
+                    pajak = 0;
+                    break;
+                    case "rumah":
+                    pajak = 0.1;
+                    break;
+                    case "industri":
+                    pajak = 0.3;      
+                    break;
+                }
+            let y=J_Pemakaian;
+            let T_Sosial = 0;
+            let T_Rumah = 0;
+            let T_Industri = 0;
+            let abodemen;
+            let subtotal;
+            
+            let teks = "";
+            let JML_Pemakaian = "";
+            let H_Abodemen = "";
+            let H_Subtotal = "";
+            for(let i=1; i <= y; i++){
+                JML_Pemakaian +=+ i + "<br>";
+                if(kategori == "rumah"){
+                T_Rumah += 500;
+                teks += T_Rumah + "<br>";
+
+                abodemen = 30000;
+                subtotal = abodemen+T_Rumah;
+                
+                H_Abodemen += abodemen+ "<br>";
+                H_Subtotal += subtotal + "<br>";
+            }else if(kategori == "sosial"){
+                T_Sosial += 300;
+                teks += T_Sosial + "<br>";
+                
+                abodemen = 10000;
+                subtotal = abodemen+T_Sosial;
+
+                H_Abodemen += abodemen+ "<br>";
+                H_Subtotal += subtotal + "<br>";
+            }else if(kategori == "industri"){
+                T_Industri += 1000;
+                teks += T_Industri + "<br>";
+                
+                abodemen = 50000;
+                subtotal = abodemen+T_Industri;
+
+                H_Abodemen += abodemen+ "<br>";
+                H_Subtotal += subtotal + "<br>";
+
+            }
+                // tampilkan
+                document.getElementById("O_Jumlah").innerHTML= JML_Pemakaian;
+                document.getElementById("O_Tarif").innerHTML= teks;
+                document.getElementById("O_Abodemen").innerHTML= H_Abodemen;
+                document.getElementById("O_Subtotal").innerHTML= H_Subtotal;
+                if(i==i){
+                document.getElementById("O_Total").innerHTML= subtotal;  
+                let outpajak=pajak*subtotal;
+                document.getElementById("O_Pajak").innerHTML= outpajak;
+                let bayar = outpajak + subtotal;
+                document.getElementById("O_Bayar").innerHTML= bayar;
+            }
+            }
+
+          }
+        function Pilih_R()
+        { 
+          
+          var T_Rumah=document.getElementById("Page_Form").K_Rumah.value;
+          if (T_Rumah=="Almanda")
+          {
+            document.getElementById("N_Rumah").innerHTML="ALMANDA";
+            document.Page_Form.H_Rumah.value=120000000;
+          } 
+          else if (T_Rumah=="Mawar")
+          {
+            document.getElementById("N_Rumah").innerHTML="MAWAR";
+            document.Page_Form.H_Rumah.value=130000000;
+          }
+        }
+          function proses7(){
+            var x;
+            x = document.getElementById("L_Kredit").value;
+            document.getElementById("L_KeditInput").value=x;
+
+            var H_Rumah = parseFloat(document.Page_Form.H_Rumah.value)
+            if (isNaN(H_Rumah))
+            {
+            H_Rumah="";
+            }      
+            var Hsl_UMuka = H_Rumah * 0.2;
+            document.Page_Form.U_Muka.value=+Hsl_UMuka;
+
+            var Hsl_Sisa = H_Rumah - Hsl_UMuka;
+            document.Page_Form.Sisa.value=+Hsl_Sisa;
+
+            var Hsl_Angsuran = Hsl_Sisa / x;
+            document.Page_Form.Ansuran.value=+Hsl_Angsuran;
+
+            var hasil="";
+            for(i=1;i<=x;i++)
+            {
+            Ansuran= (Hsl_Sisa-Hsl_Angsuran) ;
+            hasil=hasil+"Angsuran "+i+"  Rp. "+Hsl_Angsuran+" = Rp. "+Ansuran+"\n";
+            }
+            document.Page_Form.OT_hasil.value=hasil;
+
+          }
+        </script>
+    </body>
+</html>
